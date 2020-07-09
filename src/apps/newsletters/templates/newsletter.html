@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Subscribe</title>
+</head>
+<body>
+<form method="post" action="{% url 'newsletter' %}">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit">
+</form>
+
+</body>
+</html>
